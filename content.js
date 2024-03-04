@@ -11,6 +11,7 @@ window.onload = (event) => {
 <a href="index.html#services" target="_self">SERVICES</a>
 <a href="article.html" target="_self">BLOG</a>
 <a href="a-propos.html" target="_self">A PROPOS</a>
+<a href="projet.html" target="_self">PROJET</a>
 </div>`;
 
 document.getElementById("footer").innerHTML=`
@@ -25,7 +26,7 @@ document.getElementById("footer").innerHTML=`
 </div>
 </div>
 <div class="ai-marketing-droits">
-tous droits réservés 2023
+tous droits réservés 2024
 </div>`;
 
 };

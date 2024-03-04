@@ -1,4 +1,4 @@
-/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
+
 
 body {
   margin: 0;
@@ -22,7 +22,7 @@ body {
 
   /* Paramètres */
   --nom-marque: 'Immersive Adventures';
-  --taille-logo: 30px;
+  --taille-logo: 100px;
   --fichier-logo: url("./public/logo@2x.png");
 
   /* fonts */
@@ -119,7 +119,7 @@ div.menu a {
   line-height: 44px;
   cursor: pointer;
   text-decoration: none;
-  color: var(--color-slategray-100);
+  color: var(--color-white);
 }
 
 div.menu a:hover {

@@ -1,18 +1,32 @@
-/* Créé par Jonathan Roux - Utilisation interdite dans une autre formation */
+
 
 .titre {
   position: relative;
   font-weight: 800;
-  display: inline-block;
-  max-width: 783px;
+  display: block;
+  max-width: 900px;
   font-size: 80px;
+  text-align: center;
+  margin: auto;
 }
 .texte-accroche {
   font-weight: 300;
 }
+.sous-titre {
+  flex: auto;
+  padding: 0 15px; 
+  text-align: justify;
+}
 .texte-accroche-gras {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 20px;
+  text-align: left;
   font-weight: 600;
   color: var(--color-white);
+  width: 100%;
 }
 .contactez-nous,
 .sous-titre {
@@ -26,7 +40,7 @@
   color: var(--color-slategray-100);
 }
 .contactez-nous {
-  flex: 1;
+  flex: auto;
   font-size: var(--font-size-xl);
   line-height: 168.6%;
   display: flex;
@@ -36,8 +50,17 @@
   align-items: center;
   justify-content: center;
 }
-.boutoncontact,
-.button-frame,
+.boutoncontact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-frame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
 .headingcontent {
   display: flex;
   flex-direction: column;
@@ -54,16 +77,26 @@
   height: 63px;
   justify-content: center;
 }
-.button-frame,
+.button-frame{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 .headingcontent {
-  justify-content: flex-start;
+  justify-content: center;
 }
 .button-frame {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   width: 299px;
   padding: var(--padding-8xl) var(--padding-10xs) 0;
   box-sizing: border-box;
 }
 .headingcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   align-self: stretch;
   padding: 0 75px;
   gap: 49px;
@@ -101,7 +134,7 @@
   justify-content: center;
   gap: 39px;
   font-size: var(--font-size-lg);
-  color: var(--color-slategray-100);
+  color: var(--color-white);
 }
 .headingframe {
   flex-direction: column;
@@ -181,6 +214,10 @@
   font-size: var(--font-size-lg);
   line-height: 44px;
   color: rgba(255, 255, 255, 0.85);
+}
+.boutoncontact {
+  text-decoration: none; /* Supprime le soulignement */
+  color: inherit; /* Hérite de la couleur du texte environnant */
 }
 .contactus,
 .contactusframe {
